@@ -1,0 +1,344 @@
+/* did this from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+
+}
+
+.showcase{
+    position: relative;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    z-index: 2;
+   
+
+}
+
+
+
+.showcase  header{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    /* The z-index CSS property sets the  */
+    /* z-order */
+     /* of a positioned element and its descendants or flex items. */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.logo{
+    text-transform: uppercase ; 
+    font-size: 35px;
+    cursor: pointer;
+     background-color:transparent; 
+ 
+}
+
+.toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background : url('menu5.png');
+    /* changes it form black to white */
+    filter: invert();
+   
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: center;
+    cursor: pointer;
+   
+}
+.toggle  .active{
+    background: url('close.jpg');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+
+
+}
+.showcase video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+     width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    /* to make it translusent */
+    opacity: 0.8;
+
+}
+/* to make the background pop */
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   background-color:rgb(216, 162, 148);
+   mix-blend-mode: overlay;
+
+}
+
+.text{
+    position: relative;
+    z-index: 10;
+}
+
+.text h2{
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+   
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+.text h3{
+    font-size: 3em;
+    font-weight: 600;
+    line-height: 1em;
+    text-transform: uppercase;
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+.text p{
+    font-size: 1.1em;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+.text a{
+    display: inline-block;
+    font-size: lem;
+    background: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+.text a:hover{
+    letter-spacing: 6px;
+
+}
+
+.social{
+    position: absolute;
+    bottom: 20px;
+    z-index:10 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.social li{
+    list-style: none;
+}
+
+.social li a{
+    display: inline-block;
+     margin:auto;
+    transform: scale(0.5);
+    transition: 0.5s;
+
+}
+ .social li a:hover{
+     transform: scale(0.8) translateY(-15px);
+ }
+ #section-a{
+
+     margin: 20px 00px;
+     padding: 100px;
+     text-align: center;
+     background:lightsalmon;
+      color: white; 
+ }
+ #section-a h2{
+     text-decoration: underline;
+ }
+
+ #section-a p{
+     font-size:1.5rem;
+     word-spacing: 40px;
+ }
+ #section-b{
+     background: black;
+     padding: 100px;
+ }
+#section-b {
+    display: flex;
+      /* grid-template-columns: repeat(3, 1fr);  */
+     grid-gap:120px; 
+    margin-bottom: 40px;
+    flex-wrap: wrap; 
+   
+}
+#section-b a{
+     display: inline-block; 
+     margin:auto;
+    transform: scale(1);
+    transition: 0.5s;
+
+}
+ #section-b a:hover{
+     transform: scale(0.8) translateY(-15px);
+ }
+#section-b img{
+    border-radius: 20px;
+}
+#section-b h3{
+     margin-bottom: 5px;
+     color: white;
+}
+h1{
+    background:black;
+    padding: 20px;
+    color: white ;
+    text-decoration: underline;
+}
+/* #section-b  div{
+   
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    
+
+} */
+ #section-c{
+
+     position:relative;
+     display: flex;
+     flex-wrap: wrap;
+     /* margin: 20px 00px; */
+     /* padding: 100px; */
+     text-align: center;
+      /* flex-direction: row;  */
+     /* justify-content: center; */
+     /* border-radius: 50px; */
+    
+ 
+ }
+ #section-c h3{
+     text-decoration: underline;
+ }
+ #section-c   p{
+     font-size: 1.2rem;
+    }
+ #section-c div{
+       margin: 10px 00px;   
+       padding:95px;  
+    
+}
+ #section-c .box-1, #section-c .box-3{
+     background:lightsalmon;
+     color: white;
+    font-size: 1.2rem;
+    word-spacing: 5px;
+    text-align: center;
+    word-spacing: 5px;
+
+ }
+ #section-c ul{
+     list-style-type:none;
+ }
+ #section-c .box-2{
+
+    text-align: center;
+    font-size: 1.2rem;
+    word-spacing: 5px;
+     margin-left: 5px;  
+  
+   
+}
+ .scroll-left {
+     /* margin: 20px 00px; */
+    height: 50px;	
+    overflow : hidden;
+    position: relative;
+    background:black;
+    color:coral;
+  
+   }
+   .scroll-left p {
+    position: absolute;
+    /* font-weight: bolder; */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    font-size: 2rem;
+    /* Starting position */
+    transform:translateX(100%);
+    /* Apply animation to this element */
+    animation: scroll-left 15s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @keyframes scroll-left {
+    0%   {
+    transform: translateX(50%); 		
+    }
+    100% {
+    transform: translateX(-50%); 
+    }
+   }
+#section-d{
+    background: rgb(206, 203, 203);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    word-spacing: 10px;
+}
+
+#section-e{
+    background: black;
+    padding: 50px;
+}
+.scroll img{
+    padding: 20px;
+    border-radius: 50px;
+    margin-bottom: 40px;
+   
+   
+   
+}
+
+   
+
